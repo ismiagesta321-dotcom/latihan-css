@@ -1,51 +1,138 @@
-body {  font-family: 'Courier New';
-        font-size: 20px;
-        font-variant: small-caps;
-        font-style: italic;}
-h1{color:blueviolet;}
-p{
-    line-height: 1.6em;
-    color: rgb(14, 14, 13);
-      margin: 0;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}  
-/* background untuk index */
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body.index-page {
   background-image: url("ismi\ ismi.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  color: white;
+  font-family: 'Courier New', monospace;
+  color: #f5f5f5;
 }
 
-/* background untuk profile */
-body.profile-page {
-  
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  color: blue;
+body.index-page h1 {
+  color: #ffd700; /* emas */
 }
 
-/* nav style */
-nav {
-  background-color: rgba(0,0,0,0.6);
-  padding: 10px;
+body.index-page p {
+  color: #e0e0e0; /* abu-abu muda */
+  padding: 20px;
+  line-height: 1.6em;
 }
-nav a {
+
+/* navbar untuk index */
+body.index-page nav {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+body.index-page nav a {
+  color: #ffd700;
   margin-right: 15px;
   text-decoration: none;
-  color: #ffcc00;
   font-weight: bold;
 }
-nav a:hover {
+
+body.index-page nav a:hover {
+  color: #ffffff;
+}
+
+/* konten utama index */
+body.index-page main {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+
+
+
+/* navbar untuk profile */
+body.profile-page nav {
+  background-color: #4CAF50; /* hijau solid */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  font-family: monospace;
+}
+
+body.profile-page nav .logo {
+  font-weight: bold;
+}
+
+body.profile-page nav .menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+body.profile-page nav .menu a:hover {
   text-decoration: underline;
 }
 
-/* konten */
-main {
-  padding: 20px;
+/* intro section */
+body.profile-page .intro {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background-color: #f2f2f2;
+}
+
+body.profile-page .foto {
+  width: 200px;
+  height: 250px;
+  background-color: #ddd;
+  margin-right: 30px;
+}
+.foto img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover; /* biar fotonya proporsional */
+  border-radius: 8px; /* opsional: sudut melengkung */
+}
+
+body.profile-page .deskripsi h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+body.profile-page .deskripsi p {
+  font-size: 16px;
+  font-family: 'Courier New', monospace;
+}
+
+/* kontak section */
+body.profile-page .kontak {
+  padding: 40px;
+  background: white;
+}
+
+body.profile-page .kontak h3 {
+  margin-bottom: 15px;
+}
+
+body.profile-page .kontak p {
+  margin-bottom: 10px;
+}
+
+/* footer profile */
+body.profile-page footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  font-family: monospace;
 }
